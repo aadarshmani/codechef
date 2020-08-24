@@ -1,22 +1,15 @@
 #include<stdio.h>
 int main()
 {	
-	long long int n, num;
-	scanf("%lld", &n);
+	int n, num;
+	scanf("%d", &n);
 	for(int i=0;i<n;i++)
-	{	long long int fact=1,count=0;
-		scanf("%lld", &num);
-		for(int i=2;i<num+1;i++)
-		{
-			fact=fact*i;
-		}
-		while((fact%10)==0)
-		{
-			count++;
-			fact=fact/10;
-		}
-		printf("%lld\n", count);
-		
+	{	int count=0;
+		scanf("%d", &num);
+	    for(int j=5;num/j>=1;j=j*5){
+	        count+=num/j;
+	    }
+		printf("%d\n", count);
 	}
 	return 0;
 }
