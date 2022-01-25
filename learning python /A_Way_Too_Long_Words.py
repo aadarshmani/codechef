@@ -1,0 +1,1 @@
+for _ in range(int(input())):lst=input();print(lst) if len(lst)<11 else print(str(lst[0])+str(len(lst)-2)+str(lst[-1]))
